@@ -111,6 +111,41 @@
     footer .social-icons i:hover {
       color: #1abc9c;
     }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .hero-section,
+      .product-grid {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-section .image-overlay,
+      .product-grid .card {
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-section .text-center {
+        margin-bottom: 1rem;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar ul li {
+        margin-bottom: 1rem;
+      }
+
+      footer .social-icons {
+        margin-top: 1rem;
+      }
+    }
   </style>
 </head>
 
@@ -137,7 +172,7 @@
 
     <!-- Hero Section -->
     <section id="home"
-      class="flex flex-col md:flex-row items-center justify-between bg-teal-100 rounded-lg shadow-lg py-20 px-10 hover-transform">
+      class="flex flex-col md:flex-row items-center justify-between bg-teal-100 rounded-lg shadow-lg py-20 px-10 hover-transform hero-section">
       <!-- Left Content -->
       <div class="text-center md:text-left md:w-1/2 mb-10 md:mb-0">
         <h1 class="text-5xl font-heading text-teal-800 mb-4">Maaz Enterprises</h1>
@@ -164,7 +199,7 @@
     <!-- Products Section -->
     <section id="products" class="py-20 bg-teal-50 rounded-lg shadow-md mb-10">
       <h2 class="section-title text-center text-teal-800 mb-8">Our Products</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 product-grid">
         <div class="card text-center">
           <div class="image-overlay">
             <img src="assets/img/countertops.jpg" alt="Countertops" class="w-full h-64 object-cover rounded-t-lg">
