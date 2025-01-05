@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaz Enterprises | Soapstone Specialists</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9fafb;
+      /* Light background for better contrast */
+    }
+
+    .font-heading {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+    }
+
+    .font-body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .hover-transform:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .text-primary {
+      color: #16a085;
+    }
+
+    .hover-btn {
+      background-color: #16a085;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hover-btn:hover {
+      background-color: #1abc9c;
+    }
+
+    .image-overlay {
+      position: relative;
+    }
+
+    .image-overlay img {
+      transition: transform 0.3s ease;
+    }
+
+    .image-overlay:hover img {
+      transform: scale(1.1);
+    }
+
+    .image-overlay::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-overlay:hover::before {
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      padding: 40px 0;
+    }
+
+    footer .social-icons i {
+      font-size: 20px;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-icons i:hover {
+      color: #1abc9c;
+    }
+  </style>
+</head>
+
+<body class="font-body">
+
+  <!-- Navbar -->
+  <header class="bg-teal-700 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-3xl font-heading text-white">Maaz Enterprises</h1>
+      <nav>
+        <ul class="flex items-center space-x-8">
+          <li><a href="#home" class="text-lg hover:text-teal-300 transition">Home</a></li>
+          <li><a href="#about" class="text-lg hover:text-teal-300 transition">About</a></li>
+          <li><a href="#products" class="text-lg hover:text-teal-300 transition">Products</a></li>
+          <li><a href="#why-us" class="text-lg hover:text-teal-300 transition">Why Us</a></li>
+          <li><a href="#contact" class="text-lg hover:text-teal-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-20">
+
+    <!-- Hero Section -->
+    <section id="home"
+      class="flex flex-col md:flex-row items-center justify-between bg-teal-100 rounded-lg shadow-lg py-20 px-10 hover-transform">
+      <!-- Left Content -->
+      <div class="text-center md:text-left md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-5xl font-heading text-teal-800 mb-4">Maaz Enterprises</h1>
+        <p class="text-lg text-gray-700">Discover the elegance of soapstone for your home and projects with superior
+          quality and craftsmanship.</p>
+        <button class="mt-6 hover-btn">Learn More</button>
+      </div>
+      <!-- Right Content (Image) -->
+      <div class="md:w-1/2 flex justify-center image-overlay">
+        <img src="assets/img/soapstone.jpg" alt="Soapstone Elegance" class="rounded-lg shadow-md w-3/4">
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <h2 class="section-title text-center text-teal-800 mb-8">About Us</h2>
+      <p class="text-center text-gray-700 max-w-3xl mx-auto">
+        At Maaz Enterprises, we specialize in high-quality soapstone for various applications including countertops,
+        fireplaces, sinks, and custom pieces. We combine expert craftsmanship with the finest materials to deliver
+        products that elevate your space.
+      </p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-teal-50 rounded-lg shadow-md mb-10">
+      <h2 class="section-title text-center text-teal-800 mb-8">Our Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card text-center">
+          <div class="image-overlay">
+            <img src="assets/img/countertops.jpg" alt="Countertops" class="w-full h-64 object-cover rounded-t-lg">
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-teal-600">Countertops</h3>
+          <p class="text-gray-700 mt-2">Premium soapstone countertops for your kitchen, bathroom, and more.</p>
+        </div>
+        <div class="card text-center">
+          <div class="image-overlay">
+            <img src="assets/img/fireplaces.jpg" alt="Fireplaces" class="w-full h-64 object-cover rounded-t-lg">
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-teal-600">Fireplaces</h3>
+          <p class="text-gray-700 mt-2">Custom-built soapstone fireplaces to add warmth and elegance to your home.</p>
+        </div>
+        <div class="card text-center">
+          <div class="image-overlay">
+            <img src="assets/img/sinks.jpg" alt="Sinks" class="w-full h-64 object-cover rounded-t-lg">
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-teal-600">Sinks</h3>
+          <p class="text-gray-700 mt-2">Elegant soapstone sinks that bring luxury and functionality to your kitchen or
+            bathroom.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-20">
+      <h2 class="section-title text-center text-teal-800 mb-8">Why Choose Us?</h2>
+      <ul class="max-w-3xl mx-auto text-gray-700 space-y-4">
+        <li><i class="fas fa-check text-teal-600 mr-2"></i> Top-quality soapstone from trusted suppliers.</li>
+        <li><i class="fas fa-check text-teal-600 mr-2"></i> Handcrafted products with precision and care.</li>
+        <li><i class="fas fa-check text-teal-600 mr-2"></i> Custom designs tailored to your needs.</li>
+        <li><i class="fas fa-check text-teal-600 mr-2"></i> Excellent customer service every step of the way.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-teal-50 rounded-lg shadow-md">
+      <h2 class="section-title text-center text-teal-800 mb-8">Contact Us</h2>
+      <div class="text-center space-y-4">
+        <p class="text-lg text-gray-700"><i class="fas fa-envelope text-teal-600 mr-2"></i> info@maazenterprises.com</p>
+        <p class="text-lg text-gray-700"><i class="fas fa-phone text-teal-600 mr-2"></i> +92 333 2428165</p>
+        <p class="text-lg text-gray-700"><i class="fas fa-map-marker-alt text-teal-600 mr-2"></i> 123 Soapstone Street,
+          New York, Pakistan</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-teal-700 text-white py-8">
+    <div class="container mx-auto text-center">
+      <div class="social-icons mb-4">
+        <a href="https://facebook.com" target="_blank" class="text-xl hover:text-teal-300 mx-2">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="text-xl hover:text-teal-300 mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-xl hover:text-teal-300 mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="text-sm">&copy; 2024 Maaz Enterprises</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
